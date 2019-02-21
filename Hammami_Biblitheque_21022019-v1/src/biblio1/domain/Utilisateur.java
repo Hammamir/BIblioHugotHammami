@@ -10,6 +10,7 @@ public class Utilisateur extends Personne{
 	public void addEmpruntEnCours() {
 		//à compléter
 		String initial="bonjour";
+		System.out.println(initial);
 	}
 	
 	public void getEmpruntEnCours() {
