@@ -32,10 +32,8 @@ public class ExemplaireDAO {
 		return max;
 	}
 	
-	public void updateExemplaire(Exemplaire ex) {
-		
-		
-		
+	public void updateExemplaire(int id, Exemplaire ex) {
+		exemplaireDB.replace(id, ex);
 	}
 	
 	public void deleteExemplaire(int id) {
