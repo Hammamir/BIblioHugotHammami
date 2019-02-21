@@ -7,12 +7,16 @@ public class Exemplaire {
 	private Date dateAchat;
 	private String isbn;
 	private EnumStatusExemplaire status;
+	private String title;
+	private String auteur;
 	
 	public Exemplaire() {}
-	public Exemplaire(int idExemplaire, Date dateAchat, String isbn,
-			EnumStatusExemplaire status) {
+	public Exemplaire(int idExemplaire, String title, String auteur, 
+			Date dateAchat, String isbn, EnumStatusExemplaire status) {
 		super();
 		this.idExemplaire = idExemplaire;
+		this.title = title;
+		this.auteur = auteur;
 		this.dateAchat = dateAchat;
 		this.isbn = isbn;
 		this.status = status;
@@ -36,8 +40,10 @@ public class Exemplaire {
 	
 	@Override
 	public String toString() {
-		return "Exemplaire [idExemplaire=" + idExemplaire + ", dateAchat="
-				+ dateAchat + ", isbn=" + isbn + ", status=" + status + "]";
+		return "Exemplaire [idExemplaire=" + idExemplaire 
+				+ ", title=" + title + ", auteur=" + auteur 
+				+ ", dateAchat=" + dateAchat + ", isbn=" + isbn 
+				+ ", status=" + status + "]";
 	}
 	
 	
